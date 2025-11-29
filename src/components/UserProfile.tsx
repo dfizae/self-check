@@ -6,7 +6,7 @@ export default function UserProfile({user, setUser}: {user: User; setUser: Dispa
     
     return(
         <>
-            <div id="wrap">
+            <div className="wrap">
                 <h1>사용자 정보 입력</h1>
                 <input type="text" value={user.name} onChange={(e) => setUser({...user, name: e.target.value})}/>
                 <input type="number" value={user.age} onChange={(e) => setUser({...user, age: parseFloat(e.target.value)})}/>
